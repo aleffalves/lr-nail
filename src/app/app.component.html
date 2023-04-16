@@ -1,26 +1,75 @@
 <div class="page">
-    <mat-toolbar class="toolbar">
-        <div style="display: grid; justify-items: center; cursor: pointer;">
-            <span class="title-logo">Luana Rabelo</span>
-            <span class="mat-caption">NAIL DESIGN</span>
-        </div>
-        <div style="display: flex;">
-            <span class="mat-subheading-2">Sobre</span>
-            <span class="mat-subheading-2">Contato</span>
-        </div>
-        <div *ngIf="false"><button mat-raised-button color="accent" >Agendar</button></div>
-    </mat-toolbar>
-    <div class="page-1">
-        <div class="social-midia">
-            <div class="divider"></div>
-            <img src="assets/insta.svg" style="width: 24px; height: 24px;"  alt="">
-            <img src="assets/location.svg" style="width: 24px; height: 24px;" alt="">
-            <img src="assets/facebook.svg" style="width: 24px; height: 24px;" alt="">
-            <img src="assets/whatsapp.svg" style="width: 24px; height: 24px;" alt="">
-            <div class="divider"></div>
-        </div>
-        <div class="portifolio">
-
-        </div>
+  <mat-toolbar class="toolbar">
+    <a href="#page" class="href"><div class="div-logo">
+      <span class="title-logo">Luana Rabelo</span>
+      <span class="mat-caption">NAIL DESIGN</span>
     </div>
+  </a>
+
+    <div style="display: flex; flex-wrap: wrap;">
+      <a href="#sobre" class="href"><span class="mat-subheading-2">Sobre</span></a>
+      <span class="mat-subheading-2">Contato</span>
+    </div>
+    <div *ngIf="false"><button mat-raised-button color="accent">Agendar</button></div>
+  </mat-toolbar>
+  <div style="display: block; height: 86%; overflow: auto;">
+    <div class="page-1" id="page">
+      <div class="social-midia">
+        <div class="divider"></div>
+        <a href="https://www.instagram.com/luanarabelonails/"><img src="assets/insta.svg" class="social-midia-img"
+            alt=""></a>
+        <img src="assets/location.svg" class="social-midia-img" alt="">
+        <img src="assets/facebook.svg" class="social-midia-img" alt="">
+        <a href="https://api.whatsapp.com/send?phone=5531975036204"><img src="assets/whatsapp.svg"
+            class="social-midia-img" alt=""></a>
+        <div class="divider"></div>
+      </div>
+      <div class="portifolio">
+        <div style="width: 90%; opacity: 0.9;">
+          <owl-carousel-o [options]="customOptions">
+            <ng-template carouselSlide>
+              <img src="assets/feed-1.jpg">
+            </ng-template>
+            <ng-template carouselSlide>
+              <img src="assets/feed-2.jpg">
+            </ng-template>
+            <ng-template carouselSlide>
+              <img src="assets/feed-3.jpg">
+            </ng-template>
+            <ng-template carouselSlide>
+              <img src="assets/feed-4.jpg">
+            </ng-template>
+            <ng-template carouselSlide>
+              <img src="assets/feed-5.jpg">
+            </ng-template>
+          </owl-carousel-o>
+        </div>
+      </div>
+    </div>
+    <div class="sobre" id="sobre">
+      <div class="sobre-img">
+
+      </div>
+      <div class="sobre-texto">
+        <div class="mat-title">Sobre</div>
+        <span>
+          Olá, meu nome é Luana e eu decidi começar a me aventurar no mundo do design de unhas! Sempre fui apaixonada por esmaltes e pela beleza que as unhas podem transmitir, então decidi que era hora de aprender mais sobre essa arte e começar a praticar.
+          <br>
+          Eu comecei assistindo muitos vídeos online e lendo blogs especializados para entender melhor as técnicas e tendências atuais. Logo percebi que o design de unhas é muito mais do que simplesmente esmaltar as unhas. É preciso ter habilidade manual para aplicar os esmaltes e as decorações com precisão e criatividade para criar designs únicos.
+          <br>
+          Por isso, eu investi em alguns equipamentos de qualidade, como pincéis, adesivos e ferramentas de decoração, e comecei a praticar bastante. Foi um desafio no começo, mas com persistência e dedicação, fui aprimorando minhas habilidades e criando designs cada vez mais elaborados.
+          <br>
+          Eu descobri que o design de unhas é uma profissão muito gratificante, porque posso ajudar as pessoas a se sentirem mais bonitas e confiantes. Cada cliente é um desafio novo e uma oportunidade de criar algo único e personalizado.
+          <br>
+          Ainda tenho muito a aprender e aperfeiçoar, mas estou animada com as possibilidades que o design de unhas pode me oferecer. Quem sabe um dia eu possa abrir meu próprio salão de beleza ou trabalhar em eventos e desfiles de moda. O importante é continuar aprendendo e praticando, sempre com amor e dedicação pela arte do design de unhas.
+        </span>
+      </div>
+    </div>
+  </div>
+  <mat-toolbar class="toolbar" style="justify-content: end;">
+    <div style="display: flex;">
+      <img src="assets/copy.svg" style="width: 12px; margin-right: 5px;">
+      <span class="mat-caption">2023 Luana Rabelo Nails Design</span>
+    </div>
+  </mat-toolbar>
 </div>

@@ -14,16 +14,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:wght@400;500&display=swap');
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
 
 
 body{
   width: 100%;
   height: 100%;
   margin: 0;
-  background-image: url('/assets/bg-2.png');
-  background-repeat: no-repeat;
-  background-size:cover;
-}
+  background-color: var(--accent-color);
+ }
 
 html{
   width: 100%;
@@ -166,18 +166,18 @@ $mat-dark-theme-background: (
 // Theme Config
 
 body {
-  --primary-color: #ffdde6;
-  --primary-lighter-color: #fff5f8;
-  --primary-darker-color: #ffcfdb;
+  --primary-color: #d6b7b2;
+  --primary-lighter-color: #f3e9e8;
+  --primary-darker-color: #c69f99;
   --text-primary-color: #{$dark-primary-text};
   --text-primary-lighter-color: #{$dark-primary-text};
   --text-primary-darker-color: #{$dark-primary-text};
 }   
 $mat-primary: (
-  main: #ffdde6,
-  lighter: #fff5f8,
-  darker: #ffcfdb,
-  200: #ffdde6, // For slide toggle,
+  main: #d6b7b2,
+  lighter: #f3e9e8,
+  darker: #c69f99,
+  200: #d6b7b2, // For slide toggle,
   contrast : (
     main: $dark-primary-text,
     lighter: $dark-primary-text,
@@ -188,18 +188,18 @@ $theme-primary: mat-palette($mat-primary, main, lighter, darker);
 
 
 body {
-  --accent-color: #eb7cb8;
-  --accent-lighter-color: #f9d8ea;
-  --accent-darker-color: #e25fa0;
+  --accent-color: #8e8b88;
+  --accent-lighter-color: #dddcdb;
+  --accent-darker-color: #716e6b;
   --text-accent-color: #{$dark-primary-text};
   --text-accent-lighter-color: #{$dark-primary-text};
   --text-accent-darker-color: #{$dark-primary-text};
 }   
 $mat-accent: (
-  main: #eb7cb8,
-  lighter: #f9d8ea,
-  darker: #e25fa0,
-  200: #eb7cb8, // For slide toggle,
+  main: #8e8b88,
+  lighter: #dddcdb,
+  darker: #716e6b,
+  200: #8e8b88, // For slide toggle,
   contrast : (
     main: $dark-primary-text,
     lighter: $dark-primary-text,
