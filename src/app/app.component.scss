@@ -1,0 +1,207 @@
+.div-logo{
+    display: grid; 
+    justify-items: center;
+    align-content: center; 
+    cursor: pointer;
+}
+
+.div-logo:hover{
+    background-color: var(--accent-color);
+    border-radius: 5px;
+    width: 185px;
+    height: 50px;
+}
+
+.title-logo{
+    font-family: 'Josefin Slab', serif;
+    font-size: 30px;
+    height: 24px;
+}
+
+.mat-subheading-2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 70px;
+    margin: 0px 5px 0px 5px;
+    cursor: pointer;
+}
+
+.mat-subheading-2:hover{
+    background-color: var(--accent-color);
+    border-radius: 5px;
+}
+
+@media(max-width: 360px){
+    .mat-subheading-2{
+        max-height: 20px;
+    }
+}
+
+.page{
+    height: 100%;
+}
+
+.toolbar{
+    display: flex; 
+    justify-content: space-between; 
+    background: var(--primary-color); 
+    height: 7%;
+}
+
+.page-1{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    background-image: url('/assets/nails.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+@media(max-width: 768px){
+    .page-1{
+        height: 100%;
+        width: 100vw;
+        display: block;
+        background-image: none;
+    }
+}
+
+.divider {
+    border-left: 1px solid #2c2525;
+    height: 100px;
+}
+
+@media(max-width: 768px){
+    .divider {
+        border-left: none;
+        border-top: solid 1px;
+        width: 30px;
+        height: 0;
+    }
+}
+
+.social-midia{
+    height: 100%; 
+    width: 12%;
+    display: grid; 
+    justify-content: center; 
+    align-items: center; 
+    justify-items: center;
+}
+
+@media(max-width: 768px){
+    .social-midia{
+        height: 15%; 
+        width: 100vw;
+        display: flex; 
+        justify-content: space-around; 
+        align-items: center; 
+        justify-items: center;
+    }
+}
+
+.social-midia-img{
+    width: 24px; 
+    height: 24px; 
+    cursor: pointer;
+}
+
+.social-midia-img:hover {
+    background-color: #d6b7b2;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+}
+
+.portifolio{
+    height: 100%; 
+    width: 88%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media(max-width: 768px){
+    .portifolio{
+        height: 85%; 
+        width: 100vw;
+        background-image: url('/assets/nails.png');
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+    }
+}
+
+.sobre{
+    display: flex; 
+    width: 100%; 
+}
+
+.sobre-img{
+    width: 40%;
+    padding: 20px;
+}
+
+.sobre-texto{
+    width: 60%; 
+    display: block; 
+    padding: 20px;
+}
+
+
+@media(max-width: 768px){
+    .sobre{
+        display: grid;
+        justify-items: center;
+    }
+
+    .sobre-img{
+        width: 100vw;
+        padding: 0;
+    }
+
+    .sobre-texto{
+        width: 85vw;
+        padding: 0;
+    }
+}
+
+.href{
+    text-decoration: none; 
+    color: #2c2525;
+}
+
+.contato{
+    display: flex; 
+    width: 100%; 
+}
+
+.contato-map{
+    width: 75%;
+    padding: 20px;
+}
+
+.contato-texto{
+    width: 35%; 
+    display: block; 
+    padding: 20px;
+}
+
+@media(max-width: 768px){
+    .contato{
+        display: grid;
+        justify-items: center;
+    }
+
+    .contato-map{
+        width: 85vw;
+    }
+
+    .contato-texto{
+        width: 85vw;
+    }
+}
+
+
