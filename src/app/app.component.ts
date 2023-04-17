@@ -1,5 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, ViewChild } from '@angular/core';
+import { MapDirectionsService, MapInfoWindow, MapMarker } from '@angular/google-maps';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+import { Observable, map } from 'rxjs';
 
 @Component({
   selector: 'app-root',
@@ -8,6 +10,14 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
 })
 export class AppComponent {
   title = 'lr-nail';
+
+  center: google.maps.LatLngLiteral = {
+      lat: -19.97724, 
+      lng: -44.06908
+  };
+
+  markerPosition: google.maps.LatLngLiteral = {      lat: -19.97724, lng: -44.06908};
+  zoom = 15;
 
   customOptions: OwlOptions = {
     loop: true,
@@ -36,8 +46,4 @@ export class AppComponent {
     nav: true
   }
 
-  openWindow(url: string){
-    window.open(url, '_blank')
-    console.log('teste')
-  }
 }

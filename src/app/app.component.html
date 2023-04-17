@@ -8,7 +8,7 @@
 
     <div style="display: flex; flex-wrap: wrap;">
       <a href="#sobre" class="href"><span class="mat-subheading-2">Sobre</span></a>
-      <span class="mat-subheading-2">Contato</span>
+      <a href="#contato" class="href"><span class="mat-subheading-2">Contato</span></a>
     </div>
     <div *ngIf="false"><button mat-raised-button color="accent">Agendar</button></div>
   </mat-toolbar>
@@ -16,9 +16,8 @@
     <div class="page-1" id="page">
       <div class="social-midia">
         <div class="divider"></div>
-        <a href="https://www.instagram.com/luanarabelonails/"><img src="assets/insta.svg" class="social-midia-img"
-            alt=""></a>
-        <img src="assets/location.svg" class="social-midia-img" alt="">
+        <a href="https://www.instagram.com/luanarabelonails/"><img src="assets/insta.svg" class="social-midia-img"alt=""></a>
+        <a href="https://www.google.com.br/maps/place/R.+Pedregulho,+34+-+Durval+de+Barros,+Ibirit%C3%A9+-+MG,+32400-000/@-19.97715,-44.0700879,19z/data=!4m6!3m5!1s0xa6bfa5c6900d15:0x5445637cbeb950f7!8m2!3d-19.9772772!4d-44.0690787!16s%2Fg%2F11fz9zkhmc"><img src="assets/location.svg" class="social-midia-img" alt=""></a>
         <img src="assets/facebook.svg" class="social-midia-img" alt="">
         <a href="https://api.whatsapp.com/send?phone=5531975036204"><img src="assets/whatsapp.svg"
             class="social-midia-img" alt=""></a>
@@ -64,6 +63,20 @@
           Ainda tenho muito a aprender e aperfeiçoar, mas estou animada com as possibilidades que o design de unhas pode me oferecer. Quem sabe um dia eu possa abrir meu próprio salão de beleza ou trabalhar em eventos e desfiles de moda. O importante é continuar aprendendo e praticando, sempre com amor e dedicação pela arte do design de unhas.
         </span>
       </div>
+    </div>
+    <div class="contato" id="contato">
+      <div class="contato-map">
+        <google-map height="400px" width="100%" [center]="center" [zoom]="zoom" >
+          <map-marker #marker="mapMarker" [position]="markerPosition"></map-marker>
+        </google-map>
+      </div>
+      <div class="contato-texto">
+        <div class="mat-title">Contato</div>
+        <span style="display: flex; align-items: center; height: 35px;"><img src="assets/location.svg" style="width: 14px; margin-right: 5px;" alt=""> Rua Pedregulho, 34, Durval de Barros, Ibirité - MG</span>
+        <span style="display: flex; align-items: center; height: 35px;"><img src="assets/phone.svg" style="width: 14px; margin-right: 5px;" alt="">+55 31 973605105</span>
+
+      </div>
+
     </div>
   </div>
   <mat-toolbar class="toolbar" style="justify-content: end;">
