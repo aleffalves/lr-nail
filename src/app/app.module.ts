@@ -8,6 +8,8 @@ import {MatButtonModule} from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import { CarouselModule } from 'ngx-owl-carousel-o';
+import { GoogleMapsModule } from '@angular/google-maps'
+
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
     MatButtonModule,
     MatToolbarModule,
     MatIconModule,
-    CarouselModule
+    CarouselModule,
+    GoogleMapsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
